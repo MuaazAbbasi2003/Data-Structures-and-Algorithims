@@ -12,8 +12,8 @@ node2.next = node3;
 const head = node1;
 
 function reverseList(head) {
-  let previous = null;
   let current = head;
+  let previous = null;
 
   while (current !== null) {
     let next = current.next;
