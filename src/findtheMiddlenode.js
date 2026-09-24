@@ -23,6 +23,6 @@ function findMiddle(head) {
   return slow;
 }
 
-const hel = findMiddle(head);
+const hel = listReverse(head);
 
 console.log(hel);
