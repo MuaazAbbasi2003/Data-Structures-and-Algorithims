@@ -7,7 +7,7 @@ class OptimizedQueue {
     this.items.push(value);
   }
   dequeue() {
-    if (this.items.length - this.front) {
+    if (this.isEmpty()) {
       return null;
     }
     let value = this.items[this.front];
