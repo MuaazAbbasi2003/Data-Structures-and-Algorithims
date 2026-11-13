@@ -6,7 +6,6 @@ var removeDuplicates = function (string1, string2) {
   for (let index = 0; index < len; index++) {
     const charA = string1[index];
     const charB = string2[index];
-
     if (charA === "#") {
       stack1.pop();
     } else {
@@ -14,7 +13,6 @@ var removeDuplicates = function (string1, string2) {
         stack1.push(charA);
       }
     }
-
     if (charB === "#") {
       stack2.pop();
     } else {
