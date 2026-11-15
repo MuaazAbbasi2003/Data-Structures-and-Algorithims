@@ -19,6 +19,7 @@ function inOrder(node, res) {
   if (node === null) {
     return;
   }
+
   inOrder(node.left, res);
   res.push(node.data);
   inOrder(node.right, res);
