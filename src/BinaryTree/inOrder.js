@@ -13,15 +13,15 @@ root.left.right = new Node(5);
 root.right.right = new Node(6);
 
 const res = [];
-inOrder(root, res);
+preOrder(root, res);
 
-function inOrder(node, res) {
+function preOrder(node, res) {
   if (node === null) {
     return;
   }
 
-  inOrder(node.left, res);
+  preOrder(node.left, res);
   res.push(node.data);
-  inOrder(node.right, res);
+  preOrder(node.right, res);
 }
 console.log(res.join(" "));
